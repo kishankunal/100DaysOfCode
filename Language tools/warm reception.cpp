@@ -20,8 +20,8 @@ int main(){
 	sort(depart,depart+n);
 	
 	int chair = 1,temp = 1, i = 1, j = 0;
-	
-	=while(i<n && j<n){
+	//here max represents total number of chair occupied at a time
+	while(i<n && j<n){
 		if(arrival[i] < depart[j]){
 			temp++;
 			i++;
@@ -33,4 +33,5 @@ int main(){
 		}
 	}
 	cout << chair << endl;
+	return 0;
 }
